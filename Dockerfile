@@ -5,11 +5,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-COPY app.py requirements.txt index.html npm ./
+COPY app.py requirements.txt index.html ./
 
 RUN pip install --no-cache-dir aiohttp requests
-
-RUN chmod +x npm
 
 ENV PYTHONUNBUFFERED=1
 
