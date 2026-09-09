@@ -3,13 +3,12 @@ FROM python:3.12-slim
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    ca-certificates \
+    curl ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 COPY app.py requirements.txt index.html ./
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir aiohttp
 
 EXPOSE 8080
 
