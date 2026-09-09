@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certifi
 
 COPY app.py requirements.txt index.html ./
 
-RUN pip install --no-cache-dir aiohttp
+RUN pip install --no-cache-dir aiohttp requests
 
 ENV PYTHONUNBUFFERED=1
 
