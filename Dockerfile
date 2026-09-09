@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY app.py requirements.txt index.html ./
 
-RUN apk update && apk --no-cache add openssl bash curl wget unzip gcompat &&\
+RUN apk update && apk --no-cache add openssl bash curl wget unzip gcompat procps &&\
     chmod +x app.py &&\
     pip install -r requirements.txt
     
