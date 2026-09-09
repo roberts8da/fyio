@@ -13,6 +13,6 @@ COPY app.py requirements.txt index.html ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["python3", "app.py"]
