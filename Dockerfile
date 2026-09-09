@@ -1,14 +1,13 @@
-FROM python:3.12-slim
+FROM python:3.12-alpine
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
-
 COPY app.py requirements.txt index.html ./
 
-RUN pip install --no-cache-dir aiohttp requests
+EXPOSE 3000
 
-ENV PYTHONUNBUFFERED=1
-
+RUN apk update && apk --no-cache add openssl bash curl &&\
+    chmod +x app.py &&\
+    pip install -r requirements.txt
+    
 CMD ["python3", "app.py"]
